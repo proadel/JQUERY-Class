@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn 7 jQuery | focus and blur</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#inp1').focus(function(){
+                $('#parg1').show(2000)
+            })
+            $('#inp1').blur(function(){
+                $('#parg1').hide(2000)
+            })
+        });
+    </script>
+    <style>
+        #parg1{
+            display: none;
+            color: red;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h1>learn 7 | </h1><hr><br>
+    <h3>Example 1 : </h3>
+    <label for="">Email: </label><br>
+    <input type="email" name="email" id="inp1" placeholder="your email" required>
+    <p id="parg1">Enter your email</p>
+
+</body>
+</html>
