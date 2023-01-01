@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>learn 2 jQuery | click-dblclick-hide/show-toggle</title>
+    <script>
+         $(document).ready(function(){
+           $('#btn').click(function(){
+            $('.prg').hide(2000);
+           })
+           $('#btn').dblclick(function(){
+            $('.prg').show(2000);
+           })
+           $('#btn2').click(function(){
+            $('.prg2').toggle(3000);
+           })
+
+         });
+          //===========================================
+           //alert('WELCOME TO 2023 LEARN jquery CLASS');
+          //document.write("WELCOME TO jquery 2023") ;
+         // # = ID , . = class
+    </script>
+</head>
+<body>
+    <h1>learn 2 jQuery.html | click-hide-dblclick-show</h1> <hr><br>
+    <h3>Example 1 | click-hide-dblclick-show </h3>
+    <button id="btn">jquery</button>
+    <p class="prg">lets learn jquery 2023 | Write less Do More = jQuery</p>
+    <br>
+    <hr>
+    <h3>Example 2 | one click-toggle = hide&show</h3>
+    <button id="btn2">jquery 2</button>
+    <p class="prg2">Happy New Year 2023 | Write less Do More = jQuery</p>
+  </body>
+</html>
