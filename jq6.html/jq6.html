@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>learn 6 jQuery | Toggles Example</title>
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $('#parg1').toggle();
+            })
+            $('#btn2').click(function(){
+                $('#parg1').fadeToggle();
+            })
+            $('#btn3').click(function(){
+                $('#parg1').slideToggle();
+            })
+        });
+    </script>
+</head>
+<body>
+   <h1>learn 6 | jQuery.html | Toggles Example</h1><hr><br>
+   <button id="btn">jquery1</button>
+   <p class="parg">lets learn jquery 2023 | Write less Do More = jQuery</p>
+   <br><br>
+   <button id="btn1">Toggle</button>
+   <button id="btn2">fadeToggle</button>
+   <button id="btn3">slideToggle</button>
+   <br>
+   <p id="parg1">lets learn jQuery 2023</p>
+
+</body>
+</html>
