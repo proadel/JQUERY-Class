@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>learn 8 jQuery | animate({ codes })</title>
+    <script>
+        $(document).ready(function(){
+            //for automatical run without useing the animatr button
+            // must + new value to the new same direction >>>
+            //$('#bb').click(function(){
+                $('#dd').animate({
+                    left:'200px',
+                    top:'100px',
+                    width:'250px',
+                    height:'250px'
+                })
+                $('#dd2').animate({
+                    left:'400px'
+                })
+                $('#dd2').animate({
+                    top:'25px'
+                })
+                $('#dd').animate({
+                    left:'415px',
+                })
+                $('#dd').css({
+                    backgroundColor:'red',
+                })
+                $('#dd').css({
+                    transform:'rotate(75deg)'
+                })
+
+            //})
+        });
+     
+    </script>
+    <style>
+        #dd{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            color: #fff;
+            transition: 3s;
+        }
+        #dd2{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(93, 100, 93);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>learn 8 jQuery.html | animate({ codes })</h1><hr><br>
+    <h2>Example 1 : animate({ }) </h2>
+    <button id="bb">animate</button>
+    <!--to give the element div move-able criteria must change
+        its css to | position: relative; see style tag above!
+    -->
+    <div id="dd">
+    <h3 id="h3">WELCOME TO CLASS</h3>
+    </div>
+    <div id="dd2">
+    <h3 id="h3">jQuery2023</h3>
+    </div>  
+</body>
+</html>
