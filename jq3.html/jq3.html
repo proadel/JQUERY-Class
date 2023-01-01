@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>learn 3 jQuery | hide/show - fadeToggle</title>
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                $('.prg').fadeOut(2000);
+            })
+            $('#btn').dblclick(function(){
+                $('.prg').fadeIn(2000);
+            })
+            $('#btn2').click(function(){
+                $('.prg2').fadeToggle(2000);
+            })
+        })
+        
+    </script>
+</head>
+<body>
+    <h1>learn 3 jQuery.html | </h1><hr><br>
+    <h3>Example 1 | one click - fadeOut dblclick - fadeIn</h3>
+    <button id="btn">jquery</button>
+    <p class="prg">lets learn jquery 2023 | Write less Do More = jQuery</p>
+    <h3>Example 2 | one click - fadeToggle</h3>
+    <button id="btn2">jquery</button>
+    <p class="prg2">lets learn jquery 2023 | Write less Do More = jQuery</p>
+</body>
+</html>
